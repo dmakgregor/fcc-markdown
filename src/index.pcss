@@ -9,7 +9,8 @@ h4,
 h5,
 h6,
 p,
-pre {
+pre,
+table {
   @apply mb-4;
 }
 
@@ -54,5 +55,23 @@ blockquote {
 }
 
 table {
-  @apply table-auto;
+  @apply border-collapse;
+}
+
+table,
+thead,
+tbody,
+th,
+td {
+  @apply border;
+  @apply border-black;
+}
+
+th,
+td {
+  @apply p-2;
+}
+
+ul {
+  @apply list-disc;
 }

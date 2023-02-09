@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from './components/layout/Layout';
-import Editor from './features/editor';
-import Preview from './features/previewer';
+import { Editor, Preview } from './features/markdown';
 
 const App = () => (
   <Layout>

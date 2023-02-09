@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from 'react';
-import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { selectMarkdown, setMarkdown } from '../markdown/markdownSlice';
-import Block from '../../components/block';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
+import { selectMarkdown, setMarkdown } from '../markdownSlice';
+import Block from '../../../components/block';
 
 const Editor = () => {
   const dispatch = useAppDispatch();
@@ -14,6 +14,7 @@ const Editor = () => {
 
   return (
     <Block customClasses="w-11/12" title="Editor">
+      <h1>HEADING ONE</h1>
       <textarea rows={20} className="w-full bg-transparent" id="editor" onChange={onChange}>
         {markdown}
       </textarea>

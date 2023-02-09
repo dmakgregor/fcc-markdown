@@ -1,4 +1,4 @@
-import './index.css';
+import './index.pcss';
 import App from './App';
 import React from 'react';
 import { store } from './app/store';
